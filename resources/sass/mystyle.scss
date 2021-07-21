@@ -1,0 +1,208 @@
+*{
+    font-family: 'Jura', sans-serif;
+}
+
+body{
+    background-color: #F8F9FA;
+}
+
+:root{
+    --main-color: #5d0079;
+    --sec-color: #65466f;
+    --accent-color: rgb(193, 170, 0);
+}
+
+
+.tx-main {
+    color: var(--main-color) !important;
+}
+
+.tx-sec {
+    color: var(--sec-color) !important;
+}
+
+.tx-accent {
+    color: var(--accent-color) !important;
+}
+
+.tx-w {
+    color: white !important;
+}
+
+.b-nav{
+    background-color: #F8F9FA;
+}
+
+.banderas {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 8px var(--sec-color); 
+    border-radius: 50%;
+}
+
+
+.head {
+    height: 100vh;
+    min-height: 500px;
+    background: url('/images/Group 3.png');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+
+.title {
+    background: linear-gradient(to right, var(--main-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.b-search {
+
+  border-radius: 50px;
+  height: 45px;
+  width: 200px;
+
+}
+.cardLayout{
+    border: none;
+    outline: none;
+    transition: transform .3s;
+}
+
+.cardLayout:hover{
+
+    transform: translateY(-25px);
+    transition: transform .3s;
+
+}
+
+
+/* button nico */
+.buttonOverlay {
+    padding: 12px 24px;
+    position: relative;
+    color: white;
+    border: none;
+  }
+  
+  .buttonOverlay {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .buttonOverlay::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    border-radius: 15px;
+    transition: transform .2s ease-in-out;
+  }
+  
+  .buttonOverlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--accent-color);
+    border-radius: 15px;
+    transition: transform .2s ease-in-out;
+  }
+  
+  .buttonOverlay:hover::before {
+    transform: translate(6px, -4px);
+  }
+  
+  .buttonOverlay:hover::after {
+    transform: translate(-6px, 4px);
+  }
+
+
+
+.bg-footer {
+    position: relative;
+    overflow: hidden;
+  }
+  
+.bg-footer::before {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 70%;
+    bottom: -120px;
+    right: -60px;
+    background: linear-gradient(120deg, #f3f3f3, #f3f3f3) padding-box, linear-gradient(120deg, var(--main-color), var(--accent-color)) border-box;
+    border: 4px solid transparent;
+    border-radius: 50px 0 0 50px;
+    z-index: -1;
+    opacity: 0.2;
+    transform: rotate(50deg);
+  }
+
+  
+.swiper-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .swiper-slide {
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, var(--main-color), var(--accent-color));
+  }
+
+ .swiper-pagination-bullet {
+      background-color: var(--accent-color);
+  }
+
+.side-bar{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, white, var(--main-color));
+    position: absolute;
+    top: 0px;
+    left: -600px;
+    z-index: 999;
+    transition: 0.4s;
+}
+
+.active{
+    left: 0px !important;
+    transition: 0.4s;
+}
+
+/* .utiles{
+  position: relative;
+}
+
+.utiles::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-color);
+  overflow: hidden;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.utiles:hover::before{
+  transform: translateX(0%);
+} */
